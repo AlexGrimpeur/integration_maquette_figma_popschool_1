@@ -1,0 +1,45 @@
+
+
+
+body {
+    
+    font-family: 'Roboto';
+    text-align: justify;
+    text-align: center;
+
+    @import url('./header.scss');
+    // style du header 
+    // header {
+    //     background-image: url(./bg_maquette_figma.jpg);
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     color: #FFFFFF;
+    //     height: 500px;
+    // }
+
+    // style des bouton 
+    button {
+        border: unset;
+        background-color: #0D6EFD;
+        color:#FFFFFF;
+    }
+    
+    // style des icons puzzle 
+    i {
+        color: #0D6EFD;
+    }
+
+
+    // style des input 
+    input , textarea {
+        background-color: #D9D9D9;
+        border: unset;
+        border-radius: 15px;
+
+        // & placeholder = + l'attribut placeholder du selecteur précedent
+        &::placeholder {
+        color: #F8F9FA;
+
+        }
+    }
+}
