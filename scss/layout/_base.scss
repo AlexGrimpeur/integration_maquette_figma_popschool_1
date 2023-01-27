@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+$color1 : #0D6EFD; 
+$color2 : #D9D9D9; 
+$color3 : #FFFFFF;
+$color4 : #F8F9FA;
+
+.body {
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+// style des input 
+input , textarea {
+    background-color: $color2;
+    border: unset;
+    border-radius: 15px;
+
+    // & placeholder = + l'attribut placeholder du selecteur précedent
+    &::placeholder {
+    color: $color4;
+    }
+}
+
+// style des bouton 
+button {
+    border: unset;
+    background-color: $color1;
+    color: $color3;
+    border-radius: 15px;
+}
